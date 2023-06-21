@@ -16,3 +16,7 @@ submitBtn.addEventListener("click",(event)=>{
 	}
 	alert("Logged in as "+ inputUser.value)
 })
+
+existBtn.addEventListener("click" ,()=>{
+	alert("Logged in as "+ inputUser.value)
+})
