@@ -14,7 +14,7 @@ submitBtn.addEventListener("click",(event)=>{
 		localStorage.setItem("password",inputPass.value)
 		existBtn.style.display="inline"
 	}
-	alert("Logged in as "+ inputUser.value)
+	alert("Logged in as "+ inputUser.value) 
 })
 
 existBtn.addEventListener("click" ,()=>{
