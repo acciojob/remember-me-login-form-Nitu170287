@@ -1,14 +1,14 @@
 //your JS code here. If required.
-const submitBtn = document.getElementById("submit")
+let submitBtn = document.getElementById("submit")
 const inputCheck = document.getElementById("checkbox")
 const inputUser = document.getElementById("username")
 const inputPass =  document.getElementById("password")
-const existBtn = document.getElementById("existing")
+let existBtn = document.getElementById("existing")
 existBtn.style.display="none"
 
 
 submitBtn.addEventListener("click",(event)=>{
-	
+	event.preventDefault();
 	if(inputCheck.checked){
 		localStorage.setItem("username",inputUser.value)
 		localStorage.setItem("password",inputPass.value)
@@ -17,6 +17,7 @@ submitBtn.addEventListener("click",(event)=>{
 	alert("Logged in as "+ inputUser.value) 
 })
 
-existBtn.addEventListener("click" ,()=>{
+existBtn.addEventListener("click" ,(event)=>{
+	event.preventDefault();
 	alert("Logged in as "+ localStorage.getItem("username"))
 })
