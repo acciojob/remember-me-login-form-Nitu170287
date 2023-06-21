@@ -18,5 +18,5 @@ submitBtn.addEventListener("click",(event)=>{
 })
 
 existBtn.addEventListener("click" ,()=>{
-	alert("Logged in as "+ inputUser.value)
+	alert("Logged in as "+ localStorage.getItem("username"))
 })
